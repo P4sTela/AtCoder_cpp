@@ -13,13 +13,14 @@
 using namespace std;
 
 int main(){
-  string s, t;
-  cin >> s >> t;
+  string s;
+  cin >> s;
 
-  int counter = 0;
-  if (s[0] == t[0]) ++counter;
-  if (s[1] == t[1]) ++counter;
-  if (s[2] == t[2]) ++counter;
+  int count = 0;
+  if (s[0] == '1') ++count;
+  if (s[1] == '1') ++count;
+  if (s[2] == '1') ++count;
 
-  cout << counter << endl;
+  cout << count << endl;
 }
+
