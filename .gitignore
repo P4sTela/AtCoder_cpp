@@ -34,3 +34,6 @@
 # local
 .idea/
 cmake-build-debug/
+
+# testcase
+*.in
