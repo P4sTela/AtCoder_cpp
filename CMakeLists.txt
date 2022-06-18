@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.16)
+project(AtCoder)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(main main.cpp)
+
+add_executable(abc081_a abc081/a/main.cpp)
+add_executable(abc081_b abc081/b/main.cpp)
+add_executable(abc083_a abc083/a/main.cpp)
+add_executable(abc083_b abc083/b/main.cpp)
+add_executable(abc087_b abc087/a/main.cpp)
+add_executable(abc087_c abc087/b/main.cpp)
+add_executable(abc139_a abc139/a/main.cpp)
+add_executable(abc139_b abc139/b/main.cpp)
+add_executable(abc252_a abc252/a/main.cpp)
+add_executable(abc252_b abc252/b/main.cpp)
+add_executable(abc252_c abc252/c/main.cpp)
+add_executable(abc252_d abc252/d/main.cpp)
+add_executable(abc255_a abc255/a/main.cpp)
+add_executable(abc255_b abc255/b/main.cpp)
+add_executable(abc255_c abc255/c/main.cpp)
+add_executable(abc256_d abc256/d/main.cpp)

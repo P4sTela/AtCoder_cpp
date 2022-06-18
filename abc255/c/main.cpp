@@ -13,25 +13,36 @@
 using namespace std;
 
 int main(){
-  long int x, a, d, n;
-  cin >> x >> a >> d >> n;
+  long long X, A, D, N;
+  cin >> X >> A >> D >> N;
 
-  long int min = -1;
-  long int mem = -1;
-  for (long int i = 0; i < n; ++i) {
-    if ((x < 0 && a < 0 && d > 0) || (x > 0 && a > 0 && d < 0)) {
-      i = abs(a / d) - 10;
-      continue;
+  long long endValue = A + D * (N - 1);
+  if (D >= 0){
+    if (X >= endValue){
+      cout << X - endValue << endl;
+      return 0;
     }
-    if (min == -1) min = abs(x - (a + i * d));
-    if (min > abs(x - (a + i * d))) min = abs(x - (a + i * d));
-    if (mem == -1) {
-      mem = abs(x - (a + i * d));
-      continue;
+    if (X <= A){
+      cout << A - X << endl;
+      return 0;
     }
-    if (mem < abs(x - (a + i * d))) break;
-    mem = abs(x - (a + i * d));
+  }
+  if (D < 0){
+    if (X <= endValue){
+      cout << endValue - X << endl;
+      return 0;
+    }
+    if (X >= A){
+      cout << X - A << endl;
+      return 0;
+    }
   }
 
-  cout << setprecision(20) << min << endl;
+  long long amari = abs((X - A + D) % D);
+  double half = abs(D) / 2.0;
+  long long answer = (amari <= half) ? amari : abs(D) - amari;
+  cout << answer << endl;
+
+
+  return 0;
 }
