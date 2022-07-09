@@ -9,13 +9,23 @@
       "id": "practice_1",
       "label": "PracticeA",
       "title": "Welcome to AtCoder",
-      "url": "https://atcoder.jp/contests/abs/tasks/practice_1"
+      "url": "https://atcoder.jp/contests/abs/tasks/practice_1",
+      "directory": {
+        "path": "practicea",
+        "testdir": "test",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc086_a",
       "label": "ABC086A",
       "title": "Product",
-      "url": "https://atcoder.jp/contests/abs/tasks/abc086_a"
+      "url": "https://atcoder.jp/contests/abs/tasks/abc086_a",
+      "directory": {
+        "path": "abc086a",
+        "testdir": "test",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc081_a",
