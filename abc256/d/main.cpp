@@ -23,19 +23,20 @@ int main(){
     }
   }
 
-    long int h = (sec.size()*10)/13;
-    bool is_sorted = false;
-    while(!is_sorted){
-      if(h==1)is_sorted = true;
-      for(long int i=0; i<sec.size()-h; ++i){
-        if(sec[i]>sec[i+h]){
-          swap(sec[i],sec[i+h]);
-          if(is_sorted)is_sorted = false;
-        }
-      }
-      if(h>1) h = (h*10)/13;
-      if(h==0) h = 1;
-    }
+//    long int h = (sec.size()*10)/13;
+//    bool is_sorted = false;
+//    while(!is_sorted){
+//      if(h==1)is_sorted = true;
+//      for(long int i=0; i<sec.size()-h; ++i){
+//        if(sec[i]>sec[i+h]){
+//          swap(sec[i],sec[i+h]);
+//          if(is_sorted)is_sorted = false;
+//        }
+//      }
+//      if(h>1) h = (h*10)/13;
+//      if(h==0) h = 1;
+//    }
+  sort(sec.begin(), sec.end());
 
   int count = 0;
   for (int i = 0; i < n-1-count; ++i) {
